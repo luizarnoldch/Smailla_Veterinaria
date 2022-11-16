@@ -1,0 +1,33 @@
+@import 'tailwindcss/components';
+
+@layer components {
+  .button {
+    @apply text-marron font-semibold rounded-md ease-in-out duration-500 transition-all;
+    @apply hover:bg-marron/70 hover:text-white hover:duration-300;
+    @apply active:bg-marron/30 active:text-white active:duration-100;
+  }
+
+  .button:disabled {
+    @apply bg-marron/70 text-white/70 border-marron/70;
+  }
+
+  .button--contained {
+    @apply border-2 bg-marron text-white font-semibold;
+  }
+
+  .button--outlined {
+    @apply border-2 border-marron;
+  }
+
+  .button--small {
+    @apply h-10 min-w-[6rem] border-marron;
+  }
+
+  .button--medium {
+    @apply w-full h-10 min-w-[6rem] max-w-[8rem];
+  }
+
+  .button--large {
+    @apply w-full h-10 max-w-[12rem];
+  }
+}

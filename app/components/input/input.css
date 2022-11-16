@@ -1,0 +1,36 @@
+@import 'tailwindcss/components';
+
+@layer components {
+	.input-container {
+		@apply w-full max-w-[400px] flex flex-col gap-1;
+	}
+
+	.input--label {
+		@apply hover:font-semibold hover:text-sm;
+	}
+
+	.input--text {
+		@apply flex items-center justify-center rounded-md h-5 py-4 px-2 border-2 border-marron;
+		@apply placeholder:text-[#E4E4E4];
+	}
+
+	.input--area {
+		@apply flex items-center justify-center rounded-md max-h-[10rem] px-2 py-4 border-2 border-marron;
+		@apply placeholder:text-[#E4E4E4];
+	}
+
+	.input--dropdown {
+		@apply flex items-center justify-center rounded-md h-10 px-2 py-2 border border-marron;
+		@apply placeholder:text-[#E4E4E4];
+	}
+
+	.input--file {
+		@apply flex items-center justify-center rounded-md px-2 py-2 w-full border border-marron;
+		@apply placeholder:text-[#E4E4E4];
+	}
+
+	.input--number {
+		@apply flex items-center justify-center rounded-md px-2 py-2 w-full border border-marron;
+		@apply placeholder:text-[#E4E4E4];
+	}
+}
